@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Login Page | CodingNepal</title>
+    <title>Login Candra Kirana</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,30 +12,38 @@
         <a href="#"><img src="images/logo.svg" alt="logo"></a>
     </nav>
     <div class="form-wrapper">
-        <h2>Sign In</h2>
+        <h2>Login</h2>
         <form action="#">
             <div class="form-control">
                 <input type="text" required>
-                <label>Email or phone number</label>
+                <label>Email</label>
             </div>
             <div class="form-control">
                 <input type="password" required>
-                <label>Password</label>
+                <label>Kata Sandi</label>
             </div>
-            <button type="submit">Sign In</button>
+            <button type="submit">Login</button>
             <div class="form-help"> 
                 <div class="remember-me">
                     <input type="checkbox" id="remember-me">
-                    <label for="remember-me">Remember me</label>
+                    <label for="remember-me">Ingat Aku</label>
                 </div>
-                <a href="#">Need help?</a>
+                <a href="#">Butuh Bantuan?</a>
             </div>
         </form>
-        <p>New to Netflix? <a href="#">Sign up now</a></p>
-        <small>
-            This page is protected by Google reCAPTCHA to ensure you're not a bot. 
-            <a href="#">Learn more.</a>
-        </small>
+        <p>Anggota Baru? <a href="#">Daftar Sekarng</a></p>
     </div>
+                <nav class="nav-main">
+                    <a href="#collections">Collections</a>
+                    <a href="#story">Our Story</a>
+                    <a href="#craftsmanship">Craftsmanship</a>
+                    <a href="#contact">Visit Us</a>
+                    <a href="#contact" class="nav-cta">Book </a>
+                    <p id="userInfo">Belum login</p>
+
+<div id="authArea">
+    <button onclick="goLogin()" class="nav-cta">Login</button>
+</div>
+<script src="js/login.js"></script>                    
 </body>
 </html>
