@@ -180,7 +180,7 @@ form .form-help :where(label, a) {
 
 .alert{
     background: #e44e4e;
-    color: white;
+    color: black;
     padding: 10px;
     text-align: center;
     border:1px solid #b32929;
