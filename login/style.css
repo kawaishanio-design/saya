@@ -204,7 +204,7 @@ form .form-help :where(label, a) {
 }
 #message{
     background: #ff4e4e;
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 20px;
 }
