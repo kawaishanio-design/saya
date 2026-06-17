@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const usernameInput = document.getElementById('username').value;
     const passwordInput = document.getElementById('password').value;
     if (passwordInput === '123' && usernameInput + '!') {
-        alert('Login Berhasil, Halo' + usernameInput + '!');
+        alert('Login Berhasil, Halo-' + usernameInput + '!');
 
         localStorage.setItem("isLoggedIn", "true");
         localStorage.setItem("loggedInUser", usernameInput);
