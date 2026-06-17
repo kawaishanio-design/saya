@@ -10,18 +10,19 @@
 <body>
   
     <div class="form-wrapper">
-        <h2>Masuk</h2>
-        <form action="#">
+        <h2>Daftar</h2>
+        
+        <form id="registerForm">
             <div class="form-control">
-                <input type="text" required>
+                <input type="text" id="usermane" required>
                 <label>Nama Pengguna</label>
             </div>
              <div class="form-control">
-                <input type="text" required>
+                <input type="email" id="email" required>
                 <label>Email</label>
             </div>
             <div class="form-control">
-                <input type="password" required>
+                <input type="password" id="password" required>
                 <label>Kata Sandi</label>
             </div>
             <button type="submit">Daftar</button>
@@ -33,9 +34,9 @@
                 <a href="#">Butuh Bantuan?</a>
             </div>
         </form>
-        <p>Anggota Baru? <a href="#">Daftar Sekarng</a></p>
+        <p>Sudah Punya Akun? <a href="#">Masuk Sekarng</a></p>
     </div>
-<p id="message"></p>
+<p id="message" style="text-align: center; color white; margin-top: 15px"></p>
 <script src="js/register.js" defer></script>                    
 </body>
 </html>
