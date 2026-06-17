@@ -363,20 +363,20 @@
       <script src="login/js/welcome.js"></script>
   <script>
      document.addEventListener("DOMContentLoaded", function() {
-       const isFirstLogin = localStorage.getItem("isLoggedIn");
-       const loggedInUser = localStorage.getItem("loggedInUser");
+       const isLogin = localStorage.getItem("isLoggedIn");
+       const User = localStorage.getItem("loggedInUser");
+       
        const userInfo = document.getElementById("userInfo");
        const authArea = document.getElementById("authArea");
       
-       if (isFirstLogin === "true" && loggedInUser) {
-         if (userInfo) {
-           userInfo.innerText = `Halo, ${loggedInUser}`;
-         }
+       if (isLogin === "true" && User) {
+         if (userInfo) userInfo.innerText = "Halo," + user;
          if (authArea) {
-           authArea.innerHTML = `<button onclick="prosesLogout()" class="nav-cta">Logout</button>`;
+           authArea.innerHTML = `<button onclick="prosesLogout()" class="nav-cta">LOGOUT</button>`;
          }
        }
      });
+    
      function prosesLogout() {
        localStorage.removeItem("isLoggedIn");
        localStorage.removeItem("loggedInUser");
