@@ -361,5 +361,27 @@
 </footer>
   <script src="tooplate-stackcraft-script.js"></script>
       <script src="login/js/welcome.js"></script>
+  <script>
+     document.addEventListener("DOMContentLoaded", function() {
+       const isFirstLogin = localStorage.getItem("isLoggedIn");
+       const loggedInUser = localStorage.getItem("loggedInUser");
+       const userInfo = document.getElementById("userInfo");
+       const authArea = document.getElementById("authArea");
+      
+       if (isFirstLogin === "true" && loggedInUser) {
+         if (userInfo) {
+           userInfo.innerText = `Halo, ${loggedInUser}`;
+         }
+         if (authArea) {
+           authArea.innerHTML = `<button onclick="prosesLogout()" class="nav-cta">Logout</button>`;
+         }
+       }
+     });
+     function prosesLogout() {
+       localStorage.removeItem("isLoggedIn");
+       localStorage.removeItem("loggedInUser");
+       window.location.reload();
+     }
+   </script>
 </body>
 </html>
