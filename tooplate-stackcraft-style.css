@@ -539,14 +539,14 @@ a {
 /* ========================================
    ABOUT
    ======================================== */
-.about-grid {
+.tentangkami-grid {
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: 4rem;
   align-items: start;
 }
 
-.about-photo {
+.tentangkami-photo {
   aspect-ratio: 4/5;
   background: var(--bg-card);
   border: 1px solid var(--border);
@@ -555,7 +555,7 @@ a {
   position: relative;
 }
 
-.about-photo-placeholder {
+.tentangkami-photo-placeholder {
   width: 100%;
   height: 100%;
   display: flex;
@@ -566,19 +566,19 @@ a {
   color: var(--text-muted);
 }
 
-.about-photo-placeholder svg {
+.tentangkami-photo-placeholder svg {
   width: 48px;
   height: 48px;
   opacity: 0.4;
 }
 
-.about-photo-placeholder span {
+.tentangkami-photo-placeholder span {
   font-size: 0.82rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-.about-text h3 {
+.tentangkami-text h3 {
   font-family: var(--font-display);
   font-size: 1.8rem;
   font-weight: 500;
@@ -586,7 +586,7 @@ a {
   color: var(--text-primary);
 }
 
-.about-text p {
+.tentangkami-text p {
   color: var(--text-secondary);
   margin-bottom: 1rem;
   font-weight: 300;
@@ -594,7 +594,7 @@ a {
   line-height: 1.9;
 }
 
-.about-stats {
+.tentangkami-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
