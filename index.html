@@ -359,28 +359,7 @@
   <p>Diedit Oleh <a href="#hero"> ShabrinaYuniati(XE5/36)</a> &mdash; Diedit dengan ketelitian & diluncurkan dengan sepenuh hati</p>
 </footer>
   <script src="tooplate-stackcraft-script.js"></script>
-      <script src="login/js/welcome.js"></script>
-  <script>
-     document.addEventListener("DOMContentLoaded", function() {
-       const isLogin = localStorage.getItem("isLoggedIn");
-       const User = localStorage.getItem("loggedInUser");
-       
-       const userInfo = document.getElementById("userInfo");
-       const authArea = document.getElementById("authArea");
-      
-       if (isLogin === "true" && User) {
-         if (userInfo) userInfo.innerText = "Halo," + user;
-         if (authArea) {
-           authArea.innerHTML = `<button onclick="prosesLogout()" class="nav-cta">LOGOUT</button>`;
-         }
-       }
-     });
-    
-     function prosesLogout() {
-       localStorage.removeItem("isLoggedIn");
-       localStorage.removeItem("loggedInUser");
-       window.location.reload();
-     }
+     <script src="login/js/welcome.js"></script>
    </script>
 </body>
 </html>
